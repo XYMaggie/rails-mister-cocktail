@@ -67,7 +67,24 @@ border-radius:3px;
   border: none;
 }
 
-.milktea_name {
+.milktea_name{
 font-family: 'Lobster', cursive;
+font-weight:bold;
+font-size:30px;
+}
+
+.trash {
+  text-decoration:none
+}
+.trash:hover{
+  text-decoration:none
+}
+
+a{
+  color:black;
+}
+
+.card a:hover {
+  color:grey;
 
 }
