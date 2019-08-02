@@ -2,13 +2,12 @@
 <%=simple_form_for(@cocktail) do |f| %>
 
   <%= f.input :name %>
-
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
 
 
   <%= f.submit "Create Milktea" %>
 <% end %>
 
 <%=link_to "Go back to home page", cocktails_path %>
-
-
 
