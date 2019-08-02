@@ -1,9 +1,25 @@
-<h1>Milktea Museum</h1>
-
-<%@cocktails.each do|cocktail|%>
-<div>
-<%=cocktail.name%>
+<div class = "top-background">
+<!--   d-flex justify-content-center align-items-center
+ -->
+  <h1 class = "title">Milktea Museum</h1>
+  <p class="btn"><%=link_to "Add new milktea", new_cocktail_path%></p>
 </div>
-<%end%>
+<div class = "d-flex">
 
+  <% @cocktails.each do|cocktail| %>
+
+  <div class="card">
+    <i class="fas fa-wine-glass-alt"></i>
+    <%=link_to cocktail.name, cocktail_path(cocktail)%>
+    <span>
+      <%= link_to "Delete", cocktail_path(cocktail),
+          method: :delete,
+          data: { confirm: "Are you sure you want to delete it?" },
+          class: "trash"
+          %>
+     </span>
+  </div>
+
+  <%end%>
+</div>
 

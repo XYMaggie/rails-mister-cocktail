@@ -1,3 +1,31 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.top-background {
+  background-image: url("https://images.unsplash.com/photo-1554675427-1d637bdb5a12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=673&q=80");
+  background-image:cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align:center;
+  height:500px;
+  margin-bottom:10px;
+  opacity:0.8;
+}
+.title{
+font-family:'Permanent Marker', cursive;
+color:black;
+font-size:50px;
+padding-top:200px;
+}
+
+
+.btn {
+  text-decoration:none;
+  color:white;
+}
+
