@@ -2,15 +2,15 @@
 <!--   d-flex justify-content-center align-items-center
  -->
   <h1 class = "title">Milktea Museum</h1>
-  <p class="btn"><%=link_to "Add new milktea", new_cocktail_path%></p>
+  <a class = "add  btn btn-outline-secondary text-decoration-none text-black"href="/cocktails/new">Add new milktea></a>
 </div>
-<div class = "d-flex">
+<div class = "body">
 
   <% @cocktails.each do|cocktail| %>
 
   <div class="card">
     <i class="fas fa-wine-glass-alt"></i>
-    <%=link_to cocktail.name, cocktail_path(cocktail)%>
+    <p class = "milktea_name"><%=link_to cocktail.name, cocktail_path(cocktail)%></p>
     <span>
       <%= link_to "Delete", cocktail_path(cocktail),
           method: :delete,
@@ -22,4 +22,5 @@
 
   <%end%>
 </div>
+
 

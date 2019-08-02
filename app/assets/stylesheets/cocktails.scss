@@ -27,5 +27,47 @@ padding-top:200px;
 .btn {
   text-decoration:none;
   color:white;
+  list-style: none;
+  color:white;
 }
 
+.card {
+  height:300px;
+  width:100%;
+  text-align:center;
+  text-decoration:none;
+  border-radius: 10px;
+  border:1px,solid, rgb(200,200,200);
+  background-color:#FAF5EF;
+  opacity:0.8;
+}
+span:hover{
+  text-decoration:none;
+}
+
+// .body {
+//   align-items:center;
+//   flex-wrap:wrap;
+//   justify-content:space-around;
+// }
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.add {
+font-family: 'Lobster', cursive;
+font-weight: bold;
+opacity:1;
+border-radius:3px;
+}
+.add:hover {
+  background-color:#FADB70;
+  border: none;
+}
+
+.milktea_name {
+font-family: 'Lobster', cursive;
+
+}
